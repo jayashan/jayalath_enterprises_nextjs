@@ -1,6 +1,6 @@
 //import prisma from '@/app/libs/prismadb'
 import { NextResponse } from 'next/server'
-import { Prisma, PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@prisma/client';
 
 
 export const GET=async (request,{params})=>{
@@ -70,7 +70,7 @@ export const DELETE=async (request,{params})=>{
             }
         });
         
-        return NextResponse.json('Post Has been deleted..!');
+        return NextResponse.json(post,'Post Has been deleted..!');
     }catch(err){
         return NextResponse.json({message:'Delete Error',err},{status:500});
     }

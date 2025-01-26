@@ -5,7 +5,7 @@ import PostList from '../components/blog/PostList'
 
 
 async function GetData(){
-    const res=await fetch('http://localhost:3000/api/posts/');
+    const res=await fetch('https://www.jayalathenterprises.com/api/posts/');
 
     if(!res.ok){
         throw new Error('Failed to fetch data...!')

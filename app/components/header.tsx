@@ -1,15 +1,13 @@
 'use client'
 import Link from "next/link";
 import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import { Moon, Sun } from 'lucide-react'
 import { Button } from "@/components/ui/button";
 
 
 
 export default function Header(){
     const [mounted, setMounted] = useState(false)
-    const { theme, setTheme } = useTheme()
+    
 
     // useEffect only runs on the client, so now we can safely show the UI
     useEffect(() => {
