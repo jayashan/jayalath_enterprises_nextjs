@@ -5,12 +5,14 @@ import PostList from '../components/blog/PostList'
 
 
 async function GetData(){
-    const res=await fetch('https://www.jayalathenterprises.com/api/posts/');
+    const res=await fetch(`${BASE_URL}/api/posts`);
+    const posts=await res.json();
 
     if(!res.ok){
-        throw new Error('Failed to fetch data...!')
+        throw new Error('Failed to fetch data...!');
+
     }
-    return res.json();
+    return posts;
 }
 
 const page = async () => {
