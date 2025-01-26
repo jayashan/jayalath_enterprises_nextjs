@@ -33,14 +33,6 @@ export default function Header(){
                     <Button variant='ghost' asChild>
                         <Link href={'/'}>Services</Link>
                     </Button>
-                    <Button
-                        variant="ghost"
-                        size="icon"
-                        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-                    >
-                        {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
-                        <span className="sr-only">Toggle theme</span>
-                    </Button>
                 </nav>
             </div> 
         </header>

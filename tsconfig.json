@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/blog/AddPost.jsx", "app/components/blog/Modal.jsx", "app/components/blog/Post.jsx", "app/components/blog/PostList.jsx", "app/crud/page.jsx"],
   "exclude": ["node_modules"]
 }
