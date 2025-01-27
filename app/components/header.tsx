@@ -1,9 +1,9 @@
 'use client'
 import Link from "next/link";
 import { useState, useEffect } from 'react'
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
-
+ 
 
 export default function Header(){
     const [mounted, setMounted] = useState(false)

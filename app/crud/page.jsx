@@ -1,11 +1,11 @@
 import React from 'react'
-import AddPost from '../components/blog/AddPost'
-import PostList from '../components/blog/PostList'
+import AddPost from '../components/posts/AddPost'
+import PostList from '../components/posts/PostList'
 
 
 
 async function GetData(){
-    const res=await fetch(`${BASE_URL}/api/posts`);
+    const res=await fetch('http://localhost:3000/api/posts');
     const posts=await res.json();
 
     if(!res.ok){
