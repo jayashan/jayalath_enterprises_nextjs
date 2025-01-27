@@ -15,7 +15,7 @@ async function GetData(){
     return posts;
 }
 
-const page = async () => {
+const Crud = async () => {
     const posts=await GetData();
     console.log(posts);
 
@@ -32,4 +32,4 @@ const page = async () => {
   )
 }
 
-export default page
+export default Crud
