@@ -123,3 +123,14 @@ model Blog{
   createdAt DateTime @default(now())
 
 }
+
+model Person{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  FirstName String
+  LastName String
+  Email String
+  Address String
+  TpNo Int
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+}
