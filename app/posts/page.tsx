@@ -5,13 +5,14 @@ export default async function PostPage() {
 
     return(
         <main>
-            {blogs.map((blog)=>(
-                <ul>
-                    <li key={blog.id}>
-                        <h1>{blog.title}</h1>
-                    </li>
-                </ul>
-            ))}
+            <ul>
+                {blogs.map((blog)=>(
+                    
+                        <li key={blog.id}>
+                            <h1>{blog.title}</h1>
+                        </li>
+                ))}
+            </ul>
         </main>
     )
 }
