@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+h1{
+    @apply text-2xl font-bold;
+}
+
+input,textarea{
+    @apply px-4 py-2 border-slate-950 rounded-md;
+}
+
+textarea{
+    @apply h-36;
+}

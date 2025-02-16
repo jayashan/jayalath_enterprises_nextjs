@@ -7,7 +7,7 @@ export default function Footer(){
                         <h3 className="text-lg font-semibold">Jayalath Enterprises</h3>
                         <p></p>
                         <div>
-                            <p>&copy; 2025 Jayalath Enterprises. All rights reserved.</p>
+                            <p>&copy; 2025 Jayalath Enterprises. All rights reserved..</p>
                         </div>
                     </div>
                 </div>
