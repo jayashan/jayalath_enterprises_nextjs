@@ -1,6 +1,8 @@
 import {NextResponse} from 'next/server'
 import { prisma } from '@/lib/prisma';
 
+
+//create person
 export async function POST(req:Request){
     const {FirstName,LastName,Email,Address,TpNo}=await req.json();
 
@@ -26,5 +28,22 @@ export async function POST(req:Request){
     }catch(error){
         console.log(error);
         return NextResponse.json({message:'Could not create post.'})
+    }
+}
+
+//view all persons
+
+export async function GET(){
+    try{
+        const person=await prisma.person.findMany({
+            orderBy:{
+                createdAt:'desc',
+            },
+        });
+        return NextResponse.json(person);
+
+    }catch(error){
+        console.log(error);
+        return NextResponse.json({message:'Some error occured'},{status:500});
     }
 }
