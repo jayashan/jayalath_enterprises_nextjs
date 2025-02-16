@@ -116,6 +116,7 @@ model Category{
 model Blog{
   id String @id @default(auto()) @map("_id") @db.ObjectId
   title String
+  slug  String @unique
   content String
   published Boolean? @default(false)
   updatedAt DateTime @updatedAt
