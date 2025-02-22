@@ -50,6 +50,25 @@ export async function PUT(
         return NextResponse.json({message:'Error occured while editing'});
 
     }
+}
 
+//Delete data
+
+export async function DELETE(
+    req:Request,
+    {params}:{params:Promise<{id:string}>}
+){
+    const id=(await params).id;
+
+    try{
+        const person=await prisma.person.delete({
+            where:{id}
+        });
+        return NextResponse.json(person);
+
+    }catch(error){
+        console.log(error);
+        return NextResponse.json({message:'Error occured while deleting'})
+    }
 
 }
