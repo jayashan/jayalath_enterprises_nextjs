@@ -46,7 +46,7 @@ export async function PUT(
         return NextResponse.json(person);
 
     }catch(error){
-        console.log('Error occured while editing')
+        console.log(error)
         return NextResponse.json({message:'Error occured while editing'});
 
     }
