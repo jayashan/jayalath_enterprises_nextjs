@@ -1,4 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
+import slider from '@/assets/images/slider.jpg'
+
+import { AspectRatio } from "@/components/ui/aspect-ratio"
+
 
 import { TFuel } from "@/app/types";
 
@@ -40,22 +45,17 @@ export default async function ProductsServices() {
           ))}
         </div>
       </section>
-      
-      {/* <section id="services">
-        <h2 className="text-3xl font-semibold mb-4">Our Services</h2>
+      <section id="products">
+        <h2 className="text-3xl font-semibold mb-4">Our Products</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle>{service.name}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>{service.description}</CardDescription>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="w-[200px]">
+          <AspectRatio ratio={16 / 9}>
+            <Image src={slider}alt="Image" className="rounded-md object-cover" />
+          </AspectRatio>
         </div>
-      </section> */}
+
+        </div>
+      </section>
     </div>
   )
 }
