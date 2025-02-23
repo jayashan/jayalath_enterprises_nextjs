@@ -35,9 +35,9 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Jayalath Enterprises",
       logo: GalleryVerticalEnd,
-      plan: "Enterprise",
+      plan: "Dashboard",
     },
     {
       name: "Acme Corp.",
@@ -59,7 +59,7 @@ const data = {
       items: [
         {
           title: "History",
-          url: "#",
+          url: "/history",
         },
         {
           title: "Starred",
