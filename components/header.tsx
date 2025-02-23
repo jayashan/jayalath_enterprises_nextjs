@@ -10,13 +10,13 @@ const menuItems = [
     title: "Services",
     href: "#",
     submenu: [
-      { title: "Consulting", href: "/services/consulting" },
-      { title: "Development", href: "/services/development" },
-      { title: "Marketing", href: "/services/marketing" },
+      { title: "Consulting", href: "/" },
+      { title: "Development", href: "/" },
+      { title: "Marketing", href: "/" },
     ],
   },
-  { title: "About", href: "/about" },
-  { title: "Contact", href: "/contact" },
+  { title: "About", href: "/" },
+  { title: "Contact", href: "/" },
 ]
 
 export default function Header() {
