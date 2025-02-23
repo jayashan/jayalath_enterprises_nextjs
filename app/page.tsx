@@ -1,14 +1,10 @@
 'use client'
 import { useEffect, useState } from "react";
 import Loading from "./loading";
+import ProductsServices from "@/components/product-services";
+import Hero from "@/components/hero";
 
-// function SlowComponent(){
-//   const startTime=Date.now();
-//   while(Date.now()-startTime<3000){
-//     //Wait For 3 second
-//   }
-//   return <h1 className="text-4xl font-bold text-gray-800">Welcome to our awesome website!</h1>
-// }
+
 
 export default function Home() {
   const [loading,setLoading]=useState(true);
@@ -20,10 +16,13 @@ export default function Home() {
   },[]);
 
   return (
-      <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-purple-100">
+      <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-white to-blue-50">
         {loading?<Loading/> :
           <>  
-            <h1>Jayalath Enterprises Lanka Filling Station</h1>
+            <div className="min-h-screen flex flex-col">
+              <Hero/>
+              <ProductsServices/>
+            </div>
           </>
         }
       </main>

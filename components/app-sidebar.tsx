@@ -26,9 +26,9 @@ export function AppSidebar() {
   const pathname = usePathname()
 
   return (
-    <Sidebar>
-      <SidebarHeader className="border-b border-border px-4 py-6">
-        <h2 className="text-lg font-semibold">Advanced Dashboard</h2>
+    <Sidebar className="pt-14">
+      <SidebarHeader className="border-b border-border py-6 bg-blue-600 items-center">
+        <h2 className="text-white font-semibold">Main Dashboard</h2>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
