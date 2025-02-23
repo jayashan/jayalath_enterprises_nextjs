@@ -32,7 +32,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-red-600">
-          <h1>JAYALATH ENTERPRISES</h1>
+          <h1>JAYALATH ENTERPRISES LANKA FILLING STATION</h1>
         </Link>
         <div className="hidden md:flex space-x-4">
           {menuItems.map((item) => (

@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <h2 className="text-2xl font-bold mb-4">BusinessCo</h2>
-            <p className="text-gray-400">Your trusted business partner</p>
+            <h2 className="text-2xl font-bold mb-4">JAYALATH Enterprises Lanka Filling Station</h2>
+            <p className="text-gray-400"></p>
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
@@ -36,14 +36,14 @@ export default function Footer() {
           </div>
           <div className="w-full md:w-1/3">
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p className="text-gray-400">123 Business Street</p>
-            <p className="text-gray-400">City, State 12345</p>
-            <p className="text-gray-400">Phone: (123) 456-7890</p>
-            <p className="text-gray-400">Email: info@businessco.com</p>
+            <p className="text-gray-400">75 Mankuliya Road</p>
+            <p className="text-gray-400">Negombo, Sri Lanka</p>
+            <p className="text-gray-400">Phone: (031) 2238529</p>
+            <p className="text-gray-400">Email: jayalathenterprises1572@live.com</p>
           </div>
         </div>
         <div className="mt-8 text-center text-gray-400">
-          <p>&copy; 2024 BusinessCo. All rights reserved.</p>
+          <p>&copy; 2025 Jayalath Enterprises All rights reserved.</p>
         </div>
       </div>
     </footer>
