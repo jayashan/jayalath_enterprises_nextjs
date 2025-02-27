@@ -1,4 +1,5 @@
 import { AppSidebar } from "@/components/Dashboard/app-sidebar"
+import { auth } from "@/auth";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,7 +15,10 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
-export default function Page() {
+export default async function DashboardMain() {
+  const session=await auth();
+  console.log(session);
+
   return (
     <SidebarProvider>
       <AppSidebar />
