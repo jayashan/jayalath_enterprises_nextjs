@@ -30,7 +30,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 
-import { signOut, useSession } from "next-auth/react"
+import {useSession } from "next-auth/react"
 import { SignOut } from "../auth/signout-button"
 
 
@@ -44,7 +44,7 @@ export function NavUser({
   }
 }) {
   const { isMobile } = useSidebar()
-  const { data: session, update, status } = useSession()
+  const { data: session,status } = useSession()
 
   return (
     <SidebarMenu>
