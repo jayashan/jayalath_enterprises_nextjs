@@ -30,7 +30,8 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 
-import { useSession } from "next-auth/react"
+import { signOut, useSession } from "next-auth/react"
+import { SignOut } from "../auth/signout-button"
 
 
 export function NavUser({
@@ -43,10 +44,11 @@ export function NavUser({
   }
 }) {
   const { isMobile } = useSidebar()
-  const { data: session, status } = useSession()
+  const { data: session, update, status } = useSession()
 
   return (
     <SidebarMenu>
+      {status === "authenticated" ? (
       <SidebarMenuItem>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -122,11 +124,18 @@ export function NavUser({
             <DropdownMenuSeparator />
             <DropdownMenuItem>
               <LogOut />
-              Log out
+             <SignOut/>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarMenuItem>
+      ) : status === "unauthenticated" ? (
+        <SidebarMenuItem>
+        <div>
+
+        </div>
+      </SidebarMenuItem>
+      ):null}
     </SidebarMenu>
   )
 }
