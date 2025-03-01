@@ -25,6 +25,7 @@ import { LoginSchema } from "@/schemas"
 import Link from "next/link";
 
 
+
 const LoginForm=()=>{
     const [loading,setLoading]=useState(false);
     const[error,setError]=useState('');
@@ -108,7 +109,7 @@ const LoginForm=()=>{
             </form>
 
         </Form>
-
+       {/* <GoogleLogin/>                      */}
     </CardWrapper>
   )
 }

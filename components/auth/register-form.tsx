@@ -19,6 +19,7 @@ import { useState } from "react";
 import { register } from "@/actions/register";
 import { FormSuccess } from "./form-success";
 import { FormError } from "./form-error";
+import GoogleLogin from "./google-button";
 //import GoogleLogin  from "../google-login";
 
 const RegisterForm = () => {
@@ -126,7 +127,7 @@ const RegisterForm = () => {
             </Button>
           </form>
         </Form>
-        {/* <GoogleLogin /> */}
+        <GoogleLogin/>
       </CardWrapper>
     );
 }

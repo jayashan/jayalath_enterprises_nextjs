@@ -1,5 +1,4 @@
 import { AppSidebar } from "@/components/Dashboard/app-sidebar"
-import { auth } from "@/auth";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,9 +14,14 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
+
 export default async function DashboardMain() {
-  const session=await auth();
-  console.log(session);
+  // const session=await auth();
+  // console.log('Sessions',session);
+
+  // if(!session){
+  //   redirect('/auth/login');
+  // }
 
   return (
     <SidebarProvider>
