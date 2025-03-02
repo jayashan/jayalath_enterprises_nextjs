@@ -1,6 +1,7 @@
 import authConfig from "./auth.config"
 import NextAuth from "next-auth"
 import { privateRoutes } from "./routes"
+
  
 // Use only one of the two middleware options below
 // 1. Use middleware directly

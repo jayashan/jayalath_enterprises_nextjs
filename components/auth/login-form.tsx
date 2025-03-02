@@ -58,8 +58,10 @@ const LoginForm=()=>{
     <CardWrapper
         headerLabel="Log in to your account"
         title="Login"
-        backButtonHref="/auth/register"
-        backButtonLabel="Dont Have an account ? Register here."
+        backButtonLabel=""
+        backButtonHref=""
+        // backButtonHref="/auth/register"
+        // backButtonLabel="Dont Have an account ? Register here."
     >
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>
@@ -73,7 +75,7 @@ const LoginForm=()=>{
                                 <FormControl>
                                     <Input
                                         {...field}
-                                        placeholder="jayashan2@live.com"
+                                        placeholder="m@example.com"
                                         type="email"
                                     />
                                 </FormControl>
@@ -90,7 +92,7 @@ const LoginForm=()=>{
                                 <FormControl>
                                     <Input
                                         {...field}
-                                        placeholder="***************"
+                                        placeholder=""
                                         type="password"
                                     />
                                 </FormControl>
@@ -98,12 +100,12 @@ const LoginForm=()=>{
                             </FormItem>
                         )}
                     />
-                    <Button size='sm' variant='link' asChild className="px-0 font-normal">
+                    {/* <Button size='sm' variant='link' asChild className="px-0 font-normal">
                         <Link href='/auth/reset'>Forgot Password</Link>
-                    </Button>
+                    </Button> */}
                 </div>
                 <FormError message={error}/>
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full bg-black text-white hover:bg-black">
                     {loading?'Loading.....':'Login'}
                 </Button>
             </form>

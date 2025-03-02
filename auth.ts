@@ -13,5 +13,5 @@ export const { auth, handlers: { GET, POST }, signIn, signOut } = NextAuth({
       // console.log('jwt',token)
       return token;
     }
-  }
+  },
 });
