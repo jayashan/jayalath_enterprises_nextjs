@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 
 import { useForm } from "react-hook-form";
 
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent,CardFooter ,CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { zodResolver } from "@hookform/resolvers/zod";
 
 
@@ -130,6 +130,14 @@ const LoginForm=()=>{
 
             </Form>
             {/* <GoogleLogin/>                      */}
+            <CardFooter className="flex flex-col space-y-4">
+                <div className="text-sm text-center text-muted-foreground">
+                    Don't have an account?{" "}
+                    <Link href="#" className="text-primary hover:underline">
+                    Sign up
+                    </Link>
+                </div>
+            </CardFooter>
 
         </CardContent>
         
