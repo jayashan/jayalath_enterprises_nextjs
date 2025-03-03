@@ -119,6 +119,10 @@ const data = {
       icon: Settings2,
       items: [
         {
+          title: "Add Fuel",
+          url: "/fuel",
+        },
+        {
           title: "General",
           url: "#",
         },
