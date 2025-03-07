@@ -1,5 +1,6 @@
 import ProductsServices from "@/components/product-services";
 import Hero from "@/components/hero";
+import Footer from "@/components/footer";
 
 
 
@@ -11,7 +12,9 @@ export default function Home() {
             <div className="min-h-screen flex flex-col">
               <Hero/>
               <ProductsServices/>
+              <Footer/>
             </div>
+            
           </>
         
       </main>

@@ -1,5 +1,3 @@
-
-import React from 'react'
 import { AppSidebar } from "@/components/Dashboard/app-sidebar"
 import { Separator } from "@/components/ui/separator"
 import {
@@ -7,11 +5,10 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import AddFuelForm from '@/components/Fuel/AddFuelForm'
-import { DataTable } from '@/components/Fuel/ViewFuelTable'
 
-export default function pages(){
-    return(
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+    return (
         <div>
             <SidebarProvider>
             <AppSidebar />
@@ -24,8 +21,7 @@ export default function pages(){
                     </header>
                     <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
                         {/* <CreateFuelForm/> */}
-                        <AddFuelForm/>
-                        <DataTable/>
+                        {children}
                         <div className="grid auto-rows-min gap-4 md:grid-cols-3">
                             <div className="aspect-video rounded-xl bg-muted/50" />
                             <div className="aspect-video rounded-xl bg-muted/50" />
@@ -36,9 +32,7 @@ export default function pages(){
                     </div>
                 </SidebarInset>
             </SidebarProvider>
-            
         </div>
         
-        
-    )
-}
+    );
+  }

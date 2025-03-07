@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import Header from "../components/header";
-import Footer from "../components/footer";
+// import Footer from "../components/footer";
 import { Inter } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
+
 
 
 const inter=Inter({subsets:['latin']})
@@ -25,7 +26,7 @@ export default function RootLayout({
         <SessionProvider>
           <Header/>
             <main className="min-h-screen pt-16">{children}</main>
-          <Footer/>
+          {/* <Footer/> */}
         </SessionProvider>
       </body>
     </html>

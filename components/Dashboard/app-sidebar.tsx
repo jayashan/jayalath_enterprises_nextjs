@@ -120,7 +120,7 @@ const data = {
       items: [
         {
           title: "Add Fuel",
-          url: "/fuel",
+          url: "/dashboard/fuel",
         },
         {
           title: "General",

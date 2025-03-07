@@ -29,6 +29,7 @@ export function DataTable() {
 
   useEffect(() => {
     fetchRecords();
+    //eslint-disable-next-line
   }, [])
 
   const fetchRecords = async () => {
