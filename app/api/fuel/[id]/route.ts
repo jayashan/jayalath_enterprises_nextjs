@@ -47,6 +47,7 @@ export async function PUT(
             }
         });
         return NextResponse.json(fuel);
+        console.log('updated fuel :',fuel);
 
     }catch{
         return NextResponse.json({message:'error occured while edditing'},{status:500});

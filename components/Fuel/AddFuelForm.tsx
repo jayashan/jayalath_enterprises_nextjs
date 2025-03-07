@@ -11,7 +11,9 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 // import { Switch } from "@/components/ui/switch"
 // import { ImagePlus, X } from "lucide-react"
-import { useRouter } from "next/navigation"
+//import { useRouter } from "next/navigation"
+
+
 export default function AddFuelForm(){
   const [formData, setFormData] = useState({
     FuelCode: "",
@@ -23,7 +25,7 @@ export default function AddFuelForm(){
 //   const [images, setImages] = useState<string[]>([])
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [errors, setErrors] = useState<Record<string, string>>({})
-  const router=useRouter();   
+  //const router=useRouter();   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
@@ -115,7 +117,11 @@ export default function AddFuelForm(){
       })
       if(res.ok){
         console.log('fuel added')
-        router.push('/dashboard');
+        //router.push('/fuel');
+        //router.refresh();
+        window.location.href = "/fuel";
+        
+       
       }
 
       // Success - Clear form or navigate away
