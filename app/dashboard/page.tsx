@@ -1,16 +1,9 @@
-
-
+import Dashboard from "@/components/Dashboard/dashboard";
 
 export default async function DashboardMain() {
-  // const session=await auth();
-  // console.log('Sessions',session);
-
-  // if(!session){
-  //   redirect('/auth/login');
-  // }
-
   return (
     <>
+        <Dashboard/>
     </>
   )
 }

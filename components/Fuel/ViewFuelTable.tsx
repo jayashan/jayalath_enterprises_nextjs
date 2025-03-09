@@ -177,7 +177,7 @@ export function DataTable() {
   
   return (
     <div>
-      <div className="rounded-md border">
+      <div className="rounded-md border w-full max-w-3xl mx-auto">
         <Table>
           <TableHeader>
             <TableRow>

@@ -51,8 +51,8 @@ export async function GET(){
         });
         return NextResponse.json(fuel);
 
-    }catch(error){
-        console.log(error);
+    }catch{
+        //console.log(error);
         return NextResponse.json({message:'error occured..!'},{status:500});
     }
 }

@@ -1,5 +1,6 @@
 import { AppSidebar } from "@/components/Dashboard/app-sidebar"
 import { Separator } from "@/components/ui/separator"
+import '@/app/icons.css';
 import {
   SidebarInset,
   SidebarProvider,

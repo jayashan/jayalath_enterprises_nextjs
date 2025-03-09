@@ -1,0 +1,15 @@
+.lucide {
+    /* Change this! */
+    color: black;
+    width: 20px;
+    height: 20px;
+    stroke-width: 1px;
+  }
+  
+  .app {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+  }
+  

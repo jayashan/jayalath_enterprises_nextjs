@@ -1,3 +1,5 @@
+
+
 export const PostData=[
     {
         id:"1",
@@ -85,3 +87,5 @@ export const CategoriesData=[
         name:'Script',
     }
 ];
+
+

@@ -1,6 +1,6 @@
 export const privateRoutes=[
     '/dashboard',
     '/posts',
-    '/fuel'
+    '/dashboard/fuel'
 
 ]
